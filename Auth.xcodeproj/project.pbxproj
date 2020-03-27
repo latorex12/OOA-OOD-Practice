@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		23788CDC242E556A0072492C /* Auth.h in Headers */ = {isa = PBXBuildFile; fileRef = 23788CDA242E556A0072492C /* Auth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23788CE3242E56070072492C /* AuthImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23788CE2242E56070072492C /* AuthImpl.swift */; };
+		23788CE5242E56490072492C /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23788CE4242E56490072492C /* ApiRequest.swift */; };
+		23788CE7242E56720072492C /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23788CE6242E56720072492C /* AuthToken.swift */; };
+		23788CE9242E567E0072492C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23788CE8242E567E0072492C /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23788CD7242E556A0072492C /* Auth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Auth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23788CDA242E556A0072492C /* Auth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Auth.h; sourceTree = "<group>"; };
 		23788CDB242E556A0072492C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23788CE2242E56070072492C /* AuthImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthImpl.swift; sourceTree = "<group>"; };
+		23788CE4242E56490072492C /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		23788CE6242E56720072492C /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		23788CE8242E567E0072492C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		23788CEA242E56E60072492C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +39,7 @@
 		23788CCD242E556A0072492C = {
 			isa = PBXGroup;
 			children = (
+				23788CEA242E56E60072492C /* README.md */,
 				23788CD9242E556A0072492C /* Auth */,
 				23788CD8242E556A0072492C /* Products */,
 			);
@@ -47,6 +57,10 @@
 			isa = PBXGroup;
 			children = (
 				23788CDA242E556A0072492C /* Auth.h */,
+				23788CE2242E56070072492C /* AuthImpl.swift */,
+				23788CE4242E56490072492C /* ApiRequest.swift */,
+				23788CE6242E56720072492C /* AuthToken.swift */,
+				23788CE8242E567E0072492C /* Storage.swift */,
 				23788CDB242E556A0072492C /* Info.plist */,
 			);
 			path = Auth;
@@ -95,6 +109,7 @@
 				TargetAttributes = {
 					23788CD6242E556A0072492C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23788CE5242E56490072492C /* ApiRequest.swift in Sources */,
+				23788CE9242E567E0072492C /* Storage.swift in Sources */,
+				23788CE3242E56070072492C /* AuthImpl.swift in Sources */,
+				23788CE7242E56720072492C /* AuthToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +278,7 @@
 		23788CE0242E556A0072492C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -276,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.latorex.Auth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -283,6 +304,7 @@
 		23788CE1242E556A0072492C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
